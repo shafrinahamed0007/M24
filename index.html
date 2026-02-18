@@ -1,0 +1,41 @@
+<!doctype html>
+<html data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+    <title>Explore</title>
+    <style type="text/tailwindcss">
+        @theme {
+        --color-clifford: #da373d;
+      }
+    </style>
+</head>
+
+<body>
+    <h1 class="text-3xl text-center py-10 font-bold underline text-clifford">
+        Hello world!
+    </h1>
+    <div class="text-center bg-primary/10">
+        <button class="btn btn-primary w-64 rounded-full">Click Me</button>
+        <button class="btn btn-error">Click Me</button>
+        <button class="btn btn-secondary">Click Me</button>
+        <button class="btn btn-warning">Click Me</button>
+        <button class="btn btn-accent btn-outline">Click Me</button>
+        <button class="btn btn-xl btn-neutral btn-soft">Click Me</button>
+        <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">Responsive</button>
+    </div>
+
+    <details class="dropdown">
+        <summary class="btn m-1">open or close</summary>
+        <ul class="menu dropdown-content bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
+            <li><a>JKono Kichu 1</a></li>
+            <li><a>JKonon Kichu 2</a></li>
+        </ul>
+    </details>
+</body>
+
+</html>
