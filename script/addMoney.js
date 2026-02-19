@@ -22,6 +22,30 @@ document.getElementById("add-money-btn").addEventListener("click", function () {
   if (pin == "1234") {
     alert(`Add Money Success from ${bankAccount} at ${new Date()}`);
     setBalance(newBalance);
+
+    // history
+    // 1 - history-container ke dhore niye asbo
+    // 2 - new div create korbo
+    // 3 - new div innerHTML add korbo
+    // 4 - history container e newDiv append korbo
+
+    // 1
+    const history = document.getElementById("history-container");
+
+    // 2
+    const newHistory = document.createElement("div");
+
+    // 3
+    newHistory.innerHTML = `
+     <div class="transaction-card p-5 bg-base-100 mt-3">
+     Add Money Success from ${bankAccount}, Acc-No: ${accNo} at ${new Date()}
+
+
+    </div>
+    `;
+
+    // 4
+    history.append(newHistory);
   } else {
     alert("Invalid PIN");
     return;
